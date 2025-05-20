@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  box-shadow: inset;
+  margin: 0;
+  padding: 0%;
+}
+
+$base: #0f0fc7;
+$highlight: #eb0cc6;
+$soft: #52cceb;
+$light: #36e0d2;
+
+$md: 62rem;
+$lg: 64rem;
+
+html,
+#root,
+body {
+  height: 100%;
+}
+
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  line-height: 1.5;
+  background-color: black;
+}
+
+
+main {
+  background-color: $base;
+  flex: 1;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+  background: $highlight;
+
+  &__logo {
+    font-weight: 900;
+    font-size: 2.25rem;
+  }
+
+  &__links {
+    display: none;
+    gap: 1.5rem;
+
+    a {
+      color: $base;
+      text-decoration: none;
+      transition: all 0.2s ease;
+
+      &:hover {
+        color: yellowgreen;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__cta {
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    color: $light;
+    background-color: rgb(104, 71, 182);
+    cursor: pointer;
+  }
+}
+
+@media (width > $md) {
+  .nav__links {
+    display: flex;
+  }
+}
+
+
+
+
+footer {
+  font-size: medium;
+  background-color: $highlight;
+  text-align: center;
+}
