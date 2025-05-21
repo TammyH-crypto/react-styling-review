@@ -26,13 +26,13 @@ body {
   min-height: 100vh;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   line-height: 1.5;
-  background-color: black;
 }
 
 
 main {
   background-color: $base;
   flex: 1;
+  
 }
 .nav {
   display: flex;
